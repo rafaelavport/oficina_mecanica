@@ -1,0 +1,15 @@
+<div class="design">
+<p style="color: green"><%= notice %></p>
+
+<h1>FUNCIONÁRIOS</h1>
+
+<div id="funcionarios">
+  <% @funcionarios.each do |funcionario| %>
+    <%= render funcionario %>
+  <% end %>
+</div>
+
+<button type="submit" class="btn-cadastro">
+<%= link_to "Cadastrar funcionario", new_funcionario_path %>
+</button>
+</div>

@@ -1,0 +1,16 @@
+<div class="design">
+<h1>EDITAR ORDEM DE SERVIÇO</h1>
+
+<%= render "form", ordem_servico: @ordem_servico %>
+
+<br>
+
+<div>
+  <button type="submit">
+  <%= link_to "Ver ordem servico", @ordem_servico %> 
+  </button>
+  <button type="submit">
+  <%= link_to "Voltar", ordem_servicos_path %>
+  </button>
+</div>
+</div>

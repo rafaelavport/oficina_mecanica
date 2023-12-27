@@ -1,0 +1,19 @@
+<div class="design">
+
+<p style="color: green"><%= notice %></p>
+
+<h1>Veiculos</h1>
+
+<div id="veiculos">
+  <% @veiculos.each do |veiculo| %>
+    <%= render veiculo %>
+    <button type=submit>
+      <%= link_to "Ver veiculo", veiculo %>
+    </button>
+  <% end %>
+</div>
+
+<button type=submit>
+<%= link_to "Cadastrar veiculo", new_veiculo_path %>
+<button>
+</div>

@@ -1,0 +1,18 @@
+<div class="design">
+<p style="color: green"><%= notice %></p>
+
+<h1>Servicos</h1>
+
+<div id="servicos">
+  <% @servicos.each do |servico| %>
+    <%= render servico %>
+    <button type="submit">
+      <%= link_to "Ver servico", servico %>
+    </button>
+  <% end %>
+</div>
+
+<button type="submit">
+<%= link_to "Cadastrar servico", new_servico_path %>
+</button>
+</div>

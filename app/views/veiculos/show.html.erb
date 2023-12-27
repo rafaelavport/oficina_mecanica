@@ -1,0 +1,17 @@
+<div class="design">
+
+<p style="color: green"><%= notice %></p>
+
+<%= render @veiculo %>
+
+<div>
+  <button type=submit>
+    <%= link_to "Voltar", veiculos_path %>
+  </button>
+  <button type=submit>
+    <%= link_to "Editar", edit_veiculo_path(@veiculo) %>
+  </button>
+
+  <%= button_to "Excluir", @veiculo, method: :delete %>
+</div>
+</div>

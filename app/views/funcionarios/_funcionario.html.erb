@@ -1,0 +1,20 @@
+<div id="<%= dom_id funcionario %>"class="design-info">
+  <p>
+    <strong>Nome:</strong>
+    <%= funcionario.nome %>
+  </p>
+
+  <p>
+    <strong>Especialidade:</strong>
+    <%= funcionario.funcao %>
+  </p>
+
+  <p>
+    <strong>Equipe:</strong>
+    <%= funcionario.equipe.nome %>
+  </p>
+
+  <%= link_to "Editar", edit_funcionario_path(funcionario), class: "btn btn-primary" %>
+  <%= link_to "Deletar", funcionario, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %> 
+
+</div>

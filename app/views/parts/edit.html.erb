@@ -1,0 +1,16 @@
+<div class="design">
+<h1>EDITAR PEÇA</h1>
+
+<%= render "form", part: @part %>
+
+<br>
+
+<div>
+  <button type="submit">
+    <%= link_to " Ver peça", @part %>
+  </button>
+  <button type="submit">
+    <%= link_to "Voltar", parts_path %>
+  </button>
+</div>
+</div>

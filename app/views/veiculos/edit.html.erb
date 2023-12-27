@@ -1,0 +1,16 @@
+<div class="design">
+<h1>EDITAR VEICULO</h1>
+
+<%= render "form", veiculo: @veiculo %>
+
+<br>
+
+<div>
+  <button type="submit">
+    <%= link_to "Ver Veiculo", @veiculo %>  
+  </button>  
+  <button type="submit">
+    <%= link_to "Voltar", veiculos_path %>
+  </button> 
+</div>
+</div>

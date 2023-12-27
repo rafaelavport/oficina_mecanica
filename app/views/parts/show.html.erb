@@ -1,0 +1,16 @@
+<div class="design">
+<p style="color: green"><%= notice %></p>
+
+<%= render @part %>
+
+<div>
+<button type="submit">
+  <%= link_to "Editar", edit_part_path(@part) %> 
+</button>
+<button type="submit">
+  <%= link_to "Voltar", parts_path %>
+</button>
+
+  <%= button_to "Excluir", @part, method: :delete %>
+</div>
+</div>

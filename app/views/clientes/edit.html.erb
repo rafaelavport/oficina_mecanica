@@ -1,0 +1,14 @@
+<h1>EDITAR CLIENTE</h1>
+
+<%= render "form", cliente: @cliente %>
+
+<br>
+
+<div>
+<button id="ver" type="submit">
+  <%= link_to "Ver Cliente", @cliente %> 
+</button>
+<button id="voltar" type="submit">
+  <%= link_to "Voltar", clientes_path %>
+</button>
+</div>
